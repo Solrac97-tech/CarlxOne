@@ -5,8 +5,8 @@ banner = """
 
             ___________________
 
-            [02] Youtube
-            [03] Facebook
+            [01] Youtube
+            [02] Facebook
             __________________
  """
 menu = """
@@ -36,7 +36,7 @@ print banner
 
 choose = raw_input("Download from: ")
 
-if choose == "02" or choose == "2":
+if choose == "01" or choose == "1":
     print "[01] mp3(MUSIC ONLY)"
     print "[02] mp4(VIDEO AND AUDIO ONLY)"
     download_from = raw_input("Download using: ")
@@ -44,7 +44,7 @@ if choose == "02" or choose == "2":
         link = raw_input("Enter your music link here: ")
         os.system('youtube-dl -x --audio-format mp3 -o "Youtube_Music/%(title)s.%(ext)s" '+link)
         returntomenu_option()
-    elif download_from == "03" or download_from == "3":
+    elif download_from == "02" or download_from == "2":
 	link = raw_input("Enter your video link here: ")
 
 	os.system('youtube-dl -f 18 -o "Youtube_video/%(title)s.%(ext)s" '+link)
