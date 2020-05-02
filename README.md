@@ -5,15 +5,17 @@ ____________
 REQUIREMENTS
 ____________
 
+01.git
+command: apt-get install git
 
-01.python(latest version)
+02.python(latest version)
 command: apt-get install python
 
-02.youtube-dl
+03.youtube-dl
 command: pip install youtube-dl
 
 paste this on your terminal: 
-https://github.com/Solrac97-tech/CarlxOne/carlx.py
+git clone https://github.com/Solrac97-tech/CarlxOne.git
 
 
 #if you already install everything, you can run the code by typing :
